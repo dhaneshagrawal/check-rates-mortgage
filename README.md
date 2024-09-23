@@ -10,7 +10,9 @@ In this project, we have used clean code architecture implementing 3 modules whe
 
 ## Design Pattern
 
-Implemented Validation Pattern for Validation which is a combination of Chain Of Responsibility along with Strategy Pattern. ALso refactored code to strive for Singe Point of Responsbility Pattern.
+Implemented Validation Pattern for Validation which is a combination of Chain Of Responsibility along with Strategy Pattern. This makes it easy to add new validations to the service.
+
+Also refactored code to strive for Singe Point of Responsbility Pattern.
 
 ## Clone the Repository
 ```
@@ -37,9 +39,11 @@ java -jar target/check-rates-mortgage.jar
 The application will be accessible at http://localhost:8080.
 ```
 
-Push to the branch (git push origin feature/YourFeature).
-Create a new Pull Request.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+or run from Intellij, the main class is "CheckRatesMortgageApplication.java"
 
-Replace placeholder texts (e.g., <your-dockerhub-username>, https://github.com/your-username/mortgage-check-application) with actual values relevant to your project.
+
+### TODO
+
+1. Implement Docker, Kubernetes and Prometheus monitoring
+2. Add Security
+3. Add Rate Limiting using Resilience4J
