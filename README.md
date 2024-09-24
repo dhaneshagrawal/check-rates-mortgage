@@ -16,8 +16,8 @@ Also refactored code to strive for Singe Point of Responsbility Pattern.
 
 ## Clone the Repository
 ```
-git clone https://github.com/your-username/mortgage-check-application.git
-cd mortgage-check-application
+git clone https://github.com/dhaneshagrawal/check-rates-mortgage.git
+cd check-rates-mortgage
 ```
 
 Build the Project
