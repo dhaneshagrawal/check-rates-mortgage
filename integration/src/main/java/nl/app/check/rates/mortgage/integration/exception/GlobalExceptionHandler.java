@@ -1,6 +1,5 @@
 package nl.app.check.rates.mortgage.integration.exception;
 
-// Integration module: GlobalExceptionHandler.java
 import nl.app.check.rates.mortgage.core.exception.ErrorResponse;
 import nl.app.check.rates.mortgage.core.exception.MortgageValidationException;
 import org.springframework.http.HttpStatus;
@@ -9,7 +8,6 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-
 import java.time.LocalDateTime;
 
 @ControllerAdvice

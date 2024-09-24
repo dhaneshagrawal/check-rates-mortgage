@@ -1,11 +1,9 @@
 package nl.app.check.rates.mortgage.core.service.impl;
 
-import jakarta.validation.constraints.NotNull;
 import nl.app.check.rates.mortgage.core.domain.MortgageRate;
 import nl.app.check.rates.mortgage.core.exception.MortgageValidationException;
 import nl.app.check.rates.mortgage.core.service.MortgageRateService;
 import org.springframework.stereotype.Service;
-
 import java.math.BigDecimal;
 import java.time.ZonedDateTime;
 import java.util.Arrays;

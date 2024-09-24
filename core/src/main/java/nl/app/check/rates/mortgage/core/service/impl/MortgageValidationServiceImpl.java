@@ -4,13 +4,10 @@ import nl.app.check.rates.mortgage.core.domain.MortgageCheckRequest;
 import nl.app.check.rates.mortgage.core.domain.MortgageCheckResponse;
 import nl.app.check.rates.mortgage.core.service.MortgageValidationService;
 import nl.app.check.rates.mortgage.core.service.Validator;
-import nl.app.check.rates.mortgage.core.service.validator.IncomeToLoanValidator;
-import nl.app.check.rates.mortgage.core.service.validator.LoanToHomeValueValidator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
@@ -18,10 +15,8 @@ public class MortgageValidationServiceImpl implements MortgageValidationService 
 
     private static final Logger logger = LoggerFactory.getLogger(MortgageValidationServiceImpl.class);
 
-    private List<Validator> validators = List.of(
-            new IncomeToLoanValidator(),
-            new LoanToHomeValueValidator()
-    );
+    @Autowired
+    List<Validator> validators;
 
     @Override
     public MortgageCheckResponse runAllValidations(MortgageCheckRequest request) {
@@ -40,3 +35,4 @@ public class MortgageValidationServiceImpl implements MortgageValidationService 
         return null;
     }
 }
+
