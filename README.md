@@ -32,14 +32,16 @@ Start Spring Boot Application
 You can run the Spring Boot application directly using Maven:
 
 ```
-mvn spring-boot:run
+mvn spring-boot:run -pl delivery
+
 Or you can run the JAR file if it has been built:
 
 java -jar target/check-rates-mortgage.jar
+
 The application will be accessible at http://localhost:8080.
 ```
 
-or run from Intellij, the main class is "CheckRatesMortgageApplication.java"
+or from an IDE you can manually run he main class, which is "CheckRatesMortgageApplication.java"
 
 
 ### TODO
