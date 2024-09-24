@@ -2,7 +2,7 @@
 
 
 ## Overview
-This project is a Spring Boot application designed for mortgage check operations. It includes validation services for mortgage applications, utilizes Docker for containerization, and Kubernetes for deployment. Additionally, it integrates with Prometheus for monitoring.
+This project is a Spring Boot application designed for mortgage check operations. Please find below details about architecture and design.
 
 ## Architecture
 
@@ -12,22 +12,22 @@ In this project, we have used clean code architecture implementing 3 modules whe
 
 Implemented Validation Pattern for Validation which is a combination of Chain Of Responsibility along with Strategy Pattern. This makes it easy to add new validations to the service.
 
-Also refactored code to strive for Singe Point of Responsbility Pattern.
+Also refactored controllers for Single Point of Responsibility.
 
-## Clone the Repository
+### Clone the Repository
 ```
 git clone https://github.com/dhaneshagrawal/check-rates-mortgage.git
 cd check-rates-mortgage
 ```
 
-Build the Project
+### Build the Project
 Ensure you have Maven installed. Build the project using:
 
 ```
 mvn clean install
 ```
 
-Running the Application Locally
+### Running the Application Locally
 Start Spring Boot Application
 You can run the Spring Boot application directly using Maven:
 
